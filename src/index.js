@@ -1,7 +1,5 @@
 import './style.css';
-import Spaghetti from './assets/images/dish-1.jpg';
+import { loadHome } from './home.js';
 
-const thumbnails = document.querySelectorAll(".card__thumbnail");
-thumbnails.forEach(thumbnail => {
-  thumbnail.src = Spaghetti;
-})
+const contentDiv = document.querySelector('.content');
+loadHome(contentDiv);
