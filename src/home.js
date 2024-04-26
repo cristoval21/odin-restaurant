@@ -1,7 +1,7 @@
 import AvocadoToastwithEgg from './assets/images/avocado-toast-with-egg.jpg';
 import HamburgerAndFries from './assets/images/hamburger-and-fries.jpg';
 import PenneCarbonara from './assets/images/penne-carbonara.jpg';
-import Salad from './assets/images/Salad.jpg';
+import Salad from './assets/images/salad.jpg';
 import TomatoSoup from './assets/images/tomato-soup.jpg';
 
 class Dish {
@@ -57,6 +57,7 @@ export function loadHome(contentDiv) {
 
   const menuHeading = document.createElement('h2');
   menuHeading.classList.add('menu__heading');
+  menuHeading.classList.add('section__heading');
   menuHeading.textContent = 'Menu Highlight';
 
   const menuCardsContainer = document.createElement('div');
