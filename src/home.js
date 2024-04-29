@@ -1,6 +1,9 @@
 import { dishes } from './Dishes.js';
 
 export function loadHome(contentDiv) {
+  // Clear contentDiv
+  contentDiv.textContent = '';
+
   // Hero
   const hero = document.createElement('div');
   hero.classList.add('hero');
