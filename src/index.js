@@ -1,6 +1,7 @@
 import './index.css';
 import { loadHome } from './home.js';
 import { loadMenu } from './menu.js';
+import { loadAbout } from './about.js';
 
 const contentDiv = document.querySelector('.content');
 loadHome(contentDiv);
@@ -15,11 +16,13 @@ function handleNavButtons(e) {
   switchActiveNav(e.target.id);
   switch (e.target.id) {
     case 'nav__button-home':
-      console.log('home');
       loadHome(contentDiv);
       break;
-    default:
+    case 'nav__button-menu':
       loadMenu(contentDiv);
+      break;
+    case 'nav__button-about':
+      loadAbout(contentDiv);
       break;
   }
 }
