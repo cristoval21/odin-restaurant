@@ -61,8 +61,18 @@ body {
   padding-block: 5rem;
 }
 
+.content__section--flex {
+  display: flex;
+  gap: 20px;
+}
+
 .section__heading {
   font-size: 2rem;
+}
+
+.section__image {
+  max-width: 30vw;
+  border-radius: 20px;
 }
 
 .hero {
@@ -159,5 +169,13 @@ body {
 @media only screen and (max-width: 960px) {
   .content__section {
     padding-inline: 5rem;
+  }
+
+  .content__section--flex {
+    flex-direction: column-reverse;
+  }
+
+  .section__image {
+    max-width: 100%;
   }
 }
